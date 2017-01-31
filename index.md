@@ -1,14 +1,14 @@
-title: Basic Example
+title: Kottans Story
 author:
-  name: Jordan Scales
-  twitter: jdan
+  name: Artem Sychov
+  twitter: ArtemSuchov
   url: http://jordanscales.com
 output: index.html
 
 --
 
-# Cleaver 101
-## A first look at quick HTML presentations
+# Kottans.org
+## The story of success
 
 --
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Basic Example</title>
+  <title>Kottans Story</title>
   <style type="text/css">
     body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -12,17 +12,19 @@
   font-size: 100%;
 }
 
-#wrapper {
-  width: 850px;
+.slide {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+}
+
+.slide-content {
+  width: 800px;
   height: 600px;
   overflow: hidden;
   margin: 80px auto 0 auto;
-}
-
-.slide {
-  width: auto;
-  height: 540px;
   padding: 30px;
+
   font-weight: 200;
   font-size: 200%;
   line-height: 1.375;
@@ -34,7 +36,7 @@
   left: 20px;
 }
 
-.controls .arrow {
+.arrow {
   width: 0; height: 0;
   border: 30px solid #333;
   float: left;
@@ -48,7 +50,7 @@
   user-select: none;
 }
 
-.controls .prev {
+.prev {
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -57,7 +59,7 @@
   border-right-width: 50px;
 }
 
-.controls .next {
+.next {
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-right-color: transparent;
@@ -66,24 +68,24 @@
   border-right-width: 0;
 }
 
-.controls .prev:hover {
+.prev:hover {
   border-right-color: #888;
   cursor: pointer;
 }
 
-.controls .next:hover {
+.next:hover {
   border-left-color: #888;
   cursor: pointer;
 }
 
-.slide h1 {
+h1 {
   font-size: 300%;
   line-height: 1.2;
   text-align: center;
   margin: 170px 0 0;
 }
 
-.slide h2 {
+h2 {
   font-size: 100%;
   line-height: 1.2;
   margin: 5px 0;
@@ -91,7 +93,7 @@
   font-weight: 200;
 }
 
-.slide h3 {
+h3 {
   font-size: 140%;
   line-height: 1.2;
   border-bottom: 1px solid #aaa;
@@ -99,20 +101,20 @@
   padding-bottom: 15px;
 }
 
-.slide ul {
+ul {
   padding: 20px 0 0 60px;
   font-weight: 200;
   line-height: 1.375;
 }
 
-.slide .author h1.name {
+.author h1 {
   font-size: 170%;
   font-weight: 200;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.slide .author h3 {
+.author h3 {
   font-weight: 100;
   text-align: center;
   font-size: 95%;
@@ -144,34 +146,39 @@ pre {
   height: 3px;
   background-color: #b4b4b4;
 
-  -webkit-transition: width 0.1s ease-out;
-  -moz-transition: width 0.1s ease-out;
-  -o-transition: width 0.1s ease-out;
-  transition: width 0.1s ease-out;
+  -webkit-transition: width 0.05s ease-out;
+  -moz-transition: width 0.05s ease-out;
+  -o-transition: width 0.05s ease-out;
+  transition: width 0.05s ease-out;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 850px) {
-  #wrapper {
-    width: auto;
-  }
 
   body {
     font-size: 70%;
+  }
+
+  .slide-content {
+    width: auto;
   }
 
   img {
     width: 100%;
   }
 
-  .slide h1 {
+  h1 {
     margin-top: 120px;
   }
 
-  .controls .prev, .controls .prev:hover {
+  .prev, .prev:hover {
     border-right-color: rgba(135, 135, 135, 0.5);
   }
 
-  .controls .next, .controls .next:hover {
+  .next, .next:hover {
     border-left-color: rgba(135, 135, 135, 0.5);
   }
 }
@@ -182,21 +189,17 @@ pre {
     overflow: hidden;
   }
 
-  #wrapper {
+  .slide-content {
+    padding: 10px;
     margin-top: 10px;
     height: 340px;
   }
 
-  .slide {
-    padding: 10px;
-    height: 340px;
-  }
-
-  .slide h1 {
+  h1 {
     margin-top: 50px;
   }
 
-  .slide ul {
+  ul {
     padding-left: 25px;
   }
 }
@@ -208,6 +211,10 @@ pre {
 
   @page {
     size: letter;
+  }
+
+  .hidden {
+    display: inline;
   }
 
   html {
@@ -230,19 +237,19 @@ pre {
     display: none;
   }
 
-  #wrapper {
-    overflow: visible;
-    height: 100%;
-    margin-top: 0;
+  .slide {
+    position: static;
   }
 
-  .slide {
+  .slide-content {
     border: 1px solid #222;
+    margin-top: 0;
     margin-bottom: 40px;
     height: 3.5in;
+    overflow: visible;
   }
 
-  .slide:nth-child(odd) {
+  .slide:nth-child(even) {
     /* 2 slides per page */
     page-break-before: always;
   }
@@ -393,11 +400,13 @@ pre .chunk {
     <div class="progress-bar"></div>
   </div>
 
-<div id="wrapper">
-    <section class="slide"><h1 id="cleaver-101">Cleaver 101</h1>
-<h2 id="a-first-look-at-quick-html-presentations">A first look at quick HTML presentations</h2>
+  <div class="slide" id="slide-1">
+    <section class="slide-content"><h1 id="kottans-org">Kottans.org</h1>
+<h2 id="the-story-of-success">The story of success</h2>
 </section>
-    <section class="slide"><h3 id="a-textual-example">A textual example</h3>
+  </div>
+  <div class="slide hidden" id="slide-2">
+    <section class="slide-content"><h3 id="a-textual-example">A textual example</h3>
 <p>Content can be written in <strong>Markdown!</strong> New lines no longer need two angle brackets.</p>
 <p>This will be in a separate paragraph.</p>
 <p><img src="http://whatismarkdown.com/workspace/img/logo.gif" alt="Drawing" style="width: 150px;"/></p>
@@ -405,7 +414,9 @@ pre .chunk {
 &lt;img src=&quot;logo.gif&quot; /&gt;</code></pre>
 <p><a href="http://google.com">Here&#39;s a link</a>.</p>
 </section>
-    <section class="slide"><h3 id="a-list-of-things">A list of things</h3>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h3 id="a-list-of-things">A list of things</h3>
 <ul>
 <li>Item 1</li>
 <li>Item B</li>
@@ -413,7 +424,9 @@ pre .chunk {
 </ul>
 <p>No need for multiple templates! <a href="http://google.com">Another link</a>.</p>
 </section>
-    <section class="slide"><h3 id="unicode">Unicode</h3>
+  </div>
+  <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><h3 id="unicode">Unicode</h3>
 <ul>
 <li>林花謝了春紅 太匆匆</li>
 <li>胭脂淚 留人醉 幾時重</li>
@@ -422,7 +435,9 @@ pre .chunk {
 <li>currency  ¤ $ ¢ € ₠ £ ¥</li>
 </ul>
 </section>
-    <section class="slide"><h3 id="a-code-example">A code example</h3>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><h3 id="a-code-example">A code example</h3>
 <pre><code class="lang-javascript"><span class="comment">// cool looking code</span>
 <span class="keyword">var</span> func = <span class="function"><span class="keyword">function</span> <span class="params">(arg1)</span> {</span>
     <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="params">(arg2)</span> {</span>
@@ -433,17 +448,20 @@ pre .chunk {
 console.log(func(<span class="number">1</span>)(<span class="number">2</span>)); <span class="comment">// result is three</span></code></pre>
 <p>And here is some <code>inline code</code> to check out.</p>
 </section>
-    <section class="slide"><div class="author">
-  <h1 class="name">Jordan Scales</h1>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><div class="author">
+  <h1 class="name">Artem Sychov</h1>
     <h3 class="twitter">
-      <a href="http://twitter.com/@jdan">@jdan</a>
+      <a href="http://twitter.com/@ArtemSuchov">@ArtemSuchov</a>
     </h3>
     <h3 class="url">
       <a href="http://jordanscales.com">http://jordanscales.com</a>
     </h3>
 </div>
 </section>
-</div>
+  </div>
+
   <div class="controls">
     <div class="arrow prev"></div>
     <div class="arrow next"></div>
@@ -452,107 +470,58 @@ console.log(func(<span class="number">1</span>)(<span class="number">2</span>));
 
   <script type="text/javascript">
     /**
- * Takes the last slide and places it at the front.
+ * Returns the current page number of the presentation.
  */
-function goBack() {
-  var wrapper = document.querySelector('#wrapper');
-  var lastSlide = wrapper.lastChild;
-  while (lastSlide !== null && lastSlide.nodeType !== 1) {
-    lastSlide = lastSlide.previousSibling;
-  }
-
-  wrapper.removeChild(lastSlide);
-  wrapper.insertBefore(lastSlide, wrapper.firstChild);
-
-  setCurrentProgress();
-  updateURL();
-  updateTabIndex();
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
 }
+
 
 /**
- * Takes the first slide and places it at the end.
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
  */
-function goForward() {
-  var wrapper = document.querySelector('#wrapper');
-  var firstSlide = wrapper.firstChild;
-  while (firstSlide !== null && firstSlide.nodeType !== 1) {
-    firstSlide = firstSlide.nextSibling;
-  }
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
 
-  wrapper.removeChild(firstSlide);
-  wrapper.appendChild(firstSlide);
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
 
-  setCurrentProgress();
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
   updateURL();
   updateTabIndex();
 }
+
 
 /**
  * Updates the current URL to include a hashtag of the current page number.
  */
 function updateURL() {
-  window.history.replaceState({} , null, '#' + currentPage());
+  window.history.replaceState({} , null, '#' + currentPosition());
 }
 
-/**
- * Returns the current page number of the presentation.
- */
-function currentPage() {
-  return document.querySelector('#wrapper .slide').dataset.page;
-}
 
 /**
- * Returns a NodeList of each .slide element.
+ * Sets the progress indicator.
  */
-function allSlides() {
-  return document.querySelectorAll('#wrapper .slide');
-}
-
-/**
- * Give each slide a "page" data attribute.
- */
-function setPageNumbers() {
-  var wrapper = document.querySelector('#wrapper');
-  var pages   = wrapper.querySelectorAll('section');
-  var page;
-
-  for (var i = 0; i < pages.length; ++i) {
-    page = pages[i];
-    page.dataset.page = i;
-  }
-}
-
-/**
- * Set the current progress indicator.
- */
-function setCurrentProgress() {
-  var wrapper = document.querySelector('#wrapper');
+function updateProgress() {
   var progressBar = document.querySelector('.progress-bar');
 
   if (progressBar !== null) {
-    var pagesNumber    = wrapper.querySelectorAll('section').length;
-    var currentNumber  = parseInt(currentPage(), 10);
-    var currentPercent = pagesNumber === 1 ? 100 : 100 * currentNumber / (pagesNumber - 1);
-    progressBar.style.width = currentPercent.toString() + '%';
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
   }
 }
 
-/**
- * Go to the specified page of content.
- */
-function goToPage(page) {
-  // Try to find the target slide.
-  var targetSlide = document.querySelector('#wrapper .slide[data-page="' + page + '"]');
-
-  // If it actually exists, go forward until we find it.
-  if (targetSlide) {
-    var numSlides = allSlides().length;
-
-    for (var i = 0; currentPage() !== page && i < numSlides; i++) {
-      goForward();
-    }
-  }
-}
 
 /**
  * Removes tabindex property from all links on the current slide, sets
@@ -561,7 +530,8 @@ function goToPage(page) {
  */
 function updateTabIndex() {
   var allLinks = document.querySelectorAll('.slide a');
-  var currentPageLinks = document.querySelector('.slide').querySelectorAll('a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
   var i;
 
   for (i = 0; i < allLinks.length; i++) {
@@ -569,49 +539,81 @@ function updateTabIndex() {
   }
 
   for (i = 0; i < currentPageLinks.length; i++) {
-    allLinks[i].removeAttribute('tabindex');
+    currentPageLinks[i].removeAttribute('tabindex');
   }
 }
 
-window.onload = function () {
+/**
+ * Determines whether or not we are currently in full screen mode
+ */
+function isFullScreen() {
+  return document.fullscreenElement ||
+         document.mozFullScreenElement ||
+         document.webkitFullscreenElement ||
+         document.msFullscreenElement;
+}
 
-  // Give each slide a "page" data attribute.
-  setPageNumbers();
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
 
+  docElem.requestFullscreen =
+      docElem.requestFullscreen ||
+      docElem.msRequestFullscreen ||
+      docElem.mozRequestFullScreen ||
+      docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+      doc.exitFullscreen ||
+      doc.msExitFullscreen ||
+      doc.mozCancelFullScreen ||
+      doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
   // Update the tabindex to prevent weird slide transitioning
   updateTabIndex();
 
   // If the location hash specifies a page number, go to it.
   var page = window.location.hash.slice(1);
   if (page) {
-    goToPage(page);
+    navigate(parseInt(page) - 1);
   }
 
   document.onkeydown = function (e) {
     var kc = e.keyCode;
 
     // left, down, H, J, backspace, PgUp - BACK
-    // up, right, K, L, space, enter, PgDn - FORWARD
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
     if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
-      goBack();
-    } else if (kc === 38 || kc === 39 || kc === 13 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
-      goForward();
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
     }
   };
 
   if (document.querySelector('.next') && document.querySelector('.prev')) {
     document.querySelector('.next').onclick = function (e) {
       e.preventDefault();
-      goForward();
+      navigate(1);
     };
 
     document.querySelector('.prev').onclick = function (e) {
       e.preventDefault();
-      goBack();
+      navigate(-1);
     };
   }
-
-};
+});
 
 
   </script>
