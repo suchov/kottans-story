@@ -2,62 +2,118 @@ title: Kottans Story
 author:
   name: Artem Sychov
   twitter: ArtemSuchov
-  url: http://jordanscales.com
+  url: http://suchov.com
 output: index.html
 
 --
-
-# Kottans.org
-## The story of success
-
---
-
-### A textual example
-
-Content can be written in **Markdown!** New lines no longer need two angle brackets.
-
-This will be in a separate paragraph.
-
-<img src="http://whatismarkdown.com/workspace/img/logo.gif" alt="Drawing" style="width: 150px;"/>
-
-    ![markdown-logo](logo.gif)
-    <img src="logo.gif" />
-
-[Here's a link](http://google.com).
+## Kottans
+## The story
+##![Kottans](img/logo.png)
 
 --
 
-### A list of things
-
-* Item 1
-* Item B
-* Item gamma
-
-No need for multiple templates! [Another link](http://google.com).
+# "Kottans" ?
+##[kottans.org](http://kottans.org/)
 
 --
 
-### Unicode
-
-* 林花謝了春紅 太匆匆
-* 胭脂淚 留人醉 幾時重
-* Matching Pairs «»‹› “”‘’「」〈〉《》〔〕
-* Greek αβγδ εζηθ ικλμ νξοπ ρςτυ φχψω
-* currency  ¤ $ ¢ € ₠ £ ¥
+# Free education exist?
 
 --
 
-### A code example
+## We are community of developers that love to code and help each other.
+## We are looking for smart, friendly, self-directed and intellectually curious people who enjoy programming and want to get significantly better.
 
-```javascript
-// cool looking code
-var func = function (arg1) {
-    return function (arg2) {
-        return "arg1: " + arg1 + "arg2: " + arg2;
-    };
-};
+--
 
-console.log(func(1)(2)); // result is three
-```
+# How does it started?
+## 2011
 
-And here is some `inline code` to check out.
+--
+
+# 2012-2013
+## Первый курс
+## 2 тренера
+
+--
+
+# 2012-2013
+## 2 курса по Ruby
+
+--
+
+# 2013-2014
+## Первый курс по JS
+
+--
+
+# 2014-2015
+## JS, Ruby, C#
+
+--
+
+# 2015-2016
+## JS (Kyiv, Kharkov, Lviv), Ruby (Kyiv, Kharkov, Lviv), C# (Kyiv, Lviv), Erlang
+
+--
+
+# What do we have for now?
+
+--
+
+# How did we get there?
+--
+
+## Формат курсво менялся с годами.
+
+--
+
+## 2012-2016 курсы с лекциями.
+
+--
+
+## 2017 - новый формат
+
+--
+
+# Artem Sychov
+## Engineering Manager in Cloverpop
+## Founder at Kottans.org
+
+--
+
+# Motivation
+## People Management
+
+--
+
+# What is the secret?
+
+--
+
+# Inner drive:
+## to be autonomous, self determined, and connected to one another.
+
+--
+
+##![Dirve](img/drive.jpg)
+## Drive: The Surprising Truth About What Motivates Us
+
+--
+
+##![Tribe](img/tribe.jpg)
+## Tribe: On Homecoming and Belonging
+
+--
+
+#
+
+--
+
+#
+
+--
+
+#
+
+--
