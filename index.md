@@ -6,6 +6,7 @@ author:
 output: index.html
 
 --
+
 ## Kottans
 ## Through Story
 ##![Kottans](img/logo.png)
@@ -87,15 +88,18 @@ output: index.html
 --
 
 # Инжинеры - инжинерам
-## (люди работают с технологией)
+## (непосредсвенно работают с технологией)
+## (евангелисты)
 
 --
 
 # Домашек много
+## было, а будут самостоятельные проэкты
 
 --
 
 # Меняем, экспериментируем.
+## 2017(новый формат курса)
 
 --
 
@@ -110,5 +114,3 @@ output: index.html
 
 ##![Tribe](img/tribe.jpg)
 ## Tribe: On Homecoming and Belonging
-
---
