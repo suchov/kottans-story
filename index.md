@@ -31,40 +31,39 @@ output: index.html
 --
 
 # 2012-2013
-## Первый курс
-## 2 тренера
-## курс по Ruby(20)
+## Meetups
+## First course Ruby(20)
 ## (20)
 
 --
 
 # 2013-2014
-## 2 курса по Ruby + расширили команду тренеров (25)
-## Первый курс по JS (30)
-## Первый курс по C# (25)
+## 2 Ruby + bigger coach team (25)
+## First JS course (30)
+## First C# course (25)
 ## (80)
 
 --
 
 # 2014-2015
-## 2 курса по JS (30+30)
-## курс по Ruby в новом составе (25)
-## Java слайды
+## JS - 2 courses (30+30)
+## Ruby course with new coaches (25)
+## Java slides
 ## (85)
 
 --
 
 # 2015-2016
-## Курс по JS (Kyiv, Kharkov, Lviv)(25+25+20)
-## Курс по Ruby (Kyiv, Kharkov, Lviv)(25+20+20)
-## Курс по C# (Kyiv, Lviv)(25+25)
-## Курс по Erlang (пробный) (20)
+## JS course (Kyiv, Kharkov, Lviv)(25+25+20)
+## Ruby course (Kyiv, Kharkov, Lviv)(25+20+20)
+## C# course (Kyiv, Lviv)(25+25)
+## Erlang course (20)
 ## (210)
 
 --
 
 # 2017
-## Просто курс(Full-Stack) (~20)
+## Just a course(Full-Stack) (~20)
 
 --
 
@@ -83,23 +82,23 @@ output: index.html
 
 --
 
-# Жесткий отбор.(тестовое)
+# A rigorous selection.(test task)
 
 --
 
-# Инжинеры - инжинерам
-## (непосредсвенно работают с технологией)
-## (евангелисты)
+# Engineer to engineers
+## (work with technology)
+## (evangelist)
 
 --
 
-# Домашек много
-## было, а будут самостоятельные проэкты
+# A ton of home work
+## And it'll be even more()
 
 --
 
-# Меняем, экспериментируем.
-## 2017(новый формат курса)
+# Change, experiment.
+## 2017(new format)
 
 --
 
