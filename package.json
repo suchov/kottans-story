@@ -15,7 +15,7 @@
   "author": "sudodoki",
   "license": "MIT",
   "dependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "~1.6.1",
     "cleaver": "~0.6.0",
     "grunt-shell": "~0.6.1",
     "grunt-contrib-watch": "~0.5.3",
